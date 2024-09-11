@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+  .advantages {
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+    height: fit-content;
+    background-image: url(/images/advantagesbg.jpg);
+    margin-bottom: 166px;
+  }
+
+  .advantages__title {
+    margin-bottom: 30px;
+  }
+
+  .advantages__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .advantages__block {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+
+    background: url(.png), rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+  }
+
+  .advantages__block--title {
+    position: relative;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 120%;
+    width: 300px;
+
+    color: #ffffff;
+  }
+
+  .advantages__block--title::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #1FCFF1;
+    margin-right: 10px;
+}
+
+.advantages__block-title-2::before {
+  background-color: #FFD512;
+}
+.advantages__block-title-3::before {
+  background-color: #9945FF;
+}
+.advantages__block-title-4::before {
+  background-color: #19FB9B;
+}
+
+  .advantages__block--text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+
+  .advantages__block-1 {
+    background-image: url(../../images/scr3_img2.png);
+  }
+  .advantages__block-2 {
+    background-image: url(../../images/scr3_img3.png);
+  }
+  .advantages__block-3 {
+    background-image: url(../../images/scr3_img4.png);
+  }
+  .advantages__block-4 {
+    background-image: url(../../images/scr3_img5.png);
+  }
+  .advantages__block-5 {
+    background-image: url(../../images/scr3_img6.png);
+  }
+}
