@@ -1,0 +1,27 @@
+@media (max-width: 1023px) {
+  .footer {
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .footer__copyright {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #848895;
+  }
+
+  .footer__social {
+    display: flex;
+    gap: 10px;
+  }
+}
