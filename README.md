@@ -7,4 +7,4 @@
 - open cloned folder on your ide
 - open new terminal
 - type [npm i]
-- type [npm run dev to start]
+- type [npm run dev] to start
