@@ -1,4 +1,4 @@
-@import './styles/blocks/header.css';
+@import "./styles/blocks/header.css";
 @import "./styles/blocks/hero.css";
 @import "./styles/blocks/about.css";
 @import "./styles/blocks/advantages.css";
@@ -15,10 +15,114 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #000000;
-  padding-inline: 10px;
+  overflow-x: hidden;
 }
 
+.burger-menu ul li .buttons {
+  display: flex;
+  gap: 15px;
+}
 
+.burger-menu ul li .buttons .header__button {
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+
+  width: 155px;
+  height: 39px;
+
+  background: #111111;
+  border: 1px solid #a962ff;
+  border-radius: 15px;
+  cursor: pointer;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+
+@media (min-width: 320px) {
+  .container {
+    padding-inline: 10px;
+  }
+  
+}
+
+@media (min-width: 1024px) {
+  .nav-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  .desktop-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .desktop-menu a:hover {
+    text-decoration: underline;
+  }
+
+  .buttons {
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+  }
+
+  .buttons button {
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+
+    width: 155px;
+    height: 39px;
+
+    background: #111111;
+    border: 1px solid #a962ff;
+    border-radius: 15px;
+    cursor: pointer;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #ffffff;
+  }
+
+  .buttons button:hover {
+    background-color: #555;
+  }
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+}
 
 .logo {
   font-size: 24px;
@@ -81,56 +185,43 @@ body {
 .burger-menu.open {
   position: sticky;
   top: 60px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateY(0);
 }
 
-/* Стилі для великого екрану (від 1024px) */
+.burger-menu.open ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.burger-menu.open ul li {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link:active::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #9945FF;
+}
+
 @media (min-width: 1024px) {
-  .nav-wrapper {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .desktop-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .desktop-menu ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-  }
-
-  .desktop-menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-
-  .desktop-menu a:hover {
-    text-decoration: underline;
-  }
-
-  .buttons {
-    margin-left: 20px;
-  }
-
-  .buttons button {
-    color: white;
-    background-color: #444;
-    border: none;
-    padding: 10px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-
-  .buttons button:hover {
-    background-color: #555;
-  }
 }
 
 .section__title {
@@ -145,11 +236,14 @@ body {
 }
 
 .button {
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 16px 32px;
+  cursor: pointer;
 
   width: 340px;
   height: 59px;
@@ -165,6 +259,23 @@ body {
   line-height: 27px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  transition-duration: .2s;
 
   color: #ffffff;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease-in-out;
+}
+
+.animate-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

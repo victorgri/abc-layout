@@ -1,6 +1,6 @@
-@media (max-width: 1023px) {
+@media (min-width: 320px) {
   .footer {
-    margin-top: 300px;
+    margin-top: 270px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -24,4 +24,11 @@
     display: flex;
     gap: 10px;
   }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: 165px;
+  }
+  
 }

@@ -1,4 +1,4 @@
-@media (max-width: 1023px) {
+@media (min-width: 320px) {
   .why-us {
     padding: 20px 0 120px;;
     background-image: url(../../images/scr2-3_bg.png);
@@ -76,4 +76,30 @@
 
     color: #c4c4c4;
   }
+}
+
+@media (min-width: 1024px) {
+
+  .why-us {
+    background-image: none;
+  }
+  .why-us-blocks {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 329px 195px;
+  }
+
+  .why-us-block-1 {
+    grid-column: 1/7;
+    grid-row: 1;
+  }
+  .why-us-block-2 {
+    grid-column: 7/-1;
+    grid-row: 1;
+  }
+  .why-us-block-3 {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+  
 }
