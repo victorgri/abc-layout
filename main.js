@@ -27,10 +27,32 @@ const Button = (label) => {
 
 const herobutton = Button('GET STARTED');
 herobutton.classList.add('hero__button')
-document.querySelector('.hero').appendChild(herobutton);
+document
+  .querySelector(".hero__slide")
+  .insertAdjacentElement("beforebegin", herobutton);
 
 const stakeButton = Button("Stake now");
 stakeButton.classList.add('stake__button');
 
 document.querySelector(".stake__text").append(stakeButton);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedBlocks = document.querySelectorAll(".animate-up");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target); // Зупиняє спостереження після анімації
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  animatedBlocks.forEach((block) => {
+    observer.observe(block);
+  });
+});
 

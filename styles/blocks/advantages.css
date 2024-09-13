@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (min-width: 320px) {
   .advantages {
     background-size: contain;
     background-position: bottom;
@@ -49,19 +49,19 @@
     bottom: 0;
     width: 2px;
     height: 100%;
-    background-color: #1FCFF1;
+    background-color: #1fcff1;
     margin-right: 10px;
-}
+  }
 
-.advantages__block-title-2::before {
-  background-color: #FFD512;
-}
-.advantages__block-title-3::before {
-  background-color: #9945FF;
-}
-.advantages__block-title-4::before {
-  background-color: #19FB9B;
-}
+  .advantages__block-title-2::before {
+    background-color: #ffd512;
+  }
+  .advantages__block-title-3::before {
+    background-color: #9945ff;
+  }
+  .advantages__block-title-4::before {
+    background-color: #19fb9b;
+  }
 
   .advantages__block--text {
     font-family: "Poppins";
@@ -87,5 +87,50 @@
   }
   .advantages__block-5 {
     background-image: url(../../images/scr3_img6.png);
+  }
+  .advantages__block-6 {
+    background-image: url(../../images/scr3_img6.png);
+  }
+}
+
+@media (min-width: 1024px) {
+  .advantages {
+    margin-top: 1125px;
+  }
+  .advantages__blocks {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 195px);
+    gap: 20px;
+  }
+
+  .advantages__block-1 {
+    grid-column: 1/9;
+    grid-row: 1;
+  }
+
+  .advantages__block-2 {
+    grid-column: 9/-1;
+    grid-row: 1;
+  }
+
+ .advantages__block-3 {
+    grid-column: 1/5;
+    grid-row: 2;
+  }
+
+  .advantages__block-4 {
+    grid-column: 5/-1;
+    grid-row: 2;
+  }
+
+  .advantages__block-5 {
+    grid-column: 1/9;
+    grid-row: 3;
+  }
+
+  .advantages__block-6 {
+    grid-column: 9/-1;
+    grid-row: 3;
   }
 }

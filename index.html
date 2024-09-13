@@ -15,199 +15,366 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-logo">
-        <img src="./images/logo.png" alt="logo" />
-        Platform
-      </div>
-      <div class="nav-wrapper">
-        <nav class="desktop-menu" id="desktop-menu">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#advantages">Advantages</a></li>
-            <li><a href="#whyus">Why Us</a></li>
-          </ul>
-          <div class="buttons">
-            <button>Know-Hows</button>
-            <button>Instruction</button>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header-logo">
+            <img src="./images/logo.png" alt="logo" />
+            Platform
           </div>
-        </nav>
-      </div>
-      <div href="#menu" id="burger-menu-btn">
-        <img class="burger-menu-icon" src="./images/burger.png" alt="menu" />
+          <div class="nav-wrapper">
+            <nav class="desktop-menu" id="desktop-menu">
+              <ul>
+                <li>
+                  <a class="menu-link" href="#home">
+                    Home
+                    <img src="./images/arrow.png" alt="arrow" />
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#about">
+                    About
+                    <img src="./images/arrow.png" alt="arrow" />
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#advantages">
+                    Advantages
+                    <img src="./images/arrow.png" alt="arrow" />
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#why-us">
+                    Why Us
+                    <img src="./images/arrow.png" alt="arrow" />
+                  </a>
+                </li>
+              </ul>
+              <div class="buttons">
+                <button>
+                  Know-Hows
+                  <img src="./images/arrow-up.png" alt="arrow-up" />
+                </button>
+                <button>
+                  Instruction
+                  <img src="./images/Instruction.png" alt="Instruction" />
+                </button>
+              </div>
+            </nav>
+          </div>
+          <div href="#menu" id="burger-menu-btn">
+            <img
+              class="burger-menu-icon"
+              src="./images/burger.png"
+              alt="menu"
+            />
+          </div>
+        </div>
       </div>
     </header>
 
     <nav class="burger-menu" id="burger-menu">
       <ul>
-        <li><a href="#home">Home</a><a href="#about">About</a></li>
-        <li><a href="#advantages">Advantages</a><a href="#whyus">Why Us</a></li>
         <li>
-          <button>Know-Hows</button>
-          <button>Instruction</button>
+          <a class="menu-link" href="#home">
+            Home
+            <img src="./images/arrow.png" alt="arrow" />
+          </a>
+          <a class="menu-link" href="#about">
+            About
+            <img src="./images/arrow.png" alt="arrow" />
+          </a>
+        </li>
+        <li>
+          <a class="menu-link" href="#advantages">
+            Advantages
+            <img src="./images/arrow.png" alt="arrow" />
+          </a>
+          <a class="menu-link" href="#why-us">
+            Why Us
+            <img src="./images/arrow.png" alt="arrow" />
+          </a>
+        </li>
+        <li>
+          <div class="buttons">
+            <button class="header__button">
+              Know-Hows
+              <img src="./images/arrow-up.png" alt="arrow-up" />
+            </button>
+            <button class="header__button">
+              Instruction
+              <img src="./images/Instruction.png" alt="Instruction" />
+            </button>
+          </div>
         </li>
       </ul>
     </nav>
+    <main>
+      <section class="hero animate-up">
+        <div class="container">
+          <div class="hero__inner">
+            <h1 class="section__title hero__title">
+              Unlock the Power of Platform - Your Gateway to Solana's Potential
+            </h1>
 
-    <section class="hero">
-      <h1 class="section__title hero__title">
-        Unlock the Power of Platform - Your Gateway to Solana's Potential
-      </h1>
+            <p class="hero__text">
+              Elevate your Solana experience to new heights with Platform
+              Validator, a cutting-edge solution that ensures lightning-fast
+              transactions and robust security measures for your blockchain
+              endeavors.
+            </p>
 
-      <p class="hero__text">
-        Elevate your Solana experience to new heights with Platform Validator, a
-        cutting-edge solution that ensures lightning-fast transactions and
-        robust security measures for your blockchain endeavors.
-      </p>
-
-      <img src="./images/logo-blured.png" alt="blured" class="hero__logo" />
-      <img src="./images/tape.png" alt="tape" class="hero__tape" />
-    </section>
-
-    <section class="about">
-      <h1 class="section__title">About</h1>
-      <h2 class="about__subtitle">Technical Excellence Unleashed</h2>
-
-      <p class="about__text">
-        By choosing Platform, you not only elevate your Solana experience but
-        also engage with a validator that represents the pinnacle of technical
-        excellence in the blockchain space. With a track record of reliability,
-        unparalleled technical expertise, and a user-centric approach, we
-        empower you to make the most of your Solana staking journey.
-      </p>
-
-      <img src="./images/video.png" alt="video" class="about__video" />
-    </section>
-
-    <section class="advantages">
-      <h1 class="section__title advantages__title">
-        Advantages that Set Platform Apart
-      </h1>
-
-      <div class="advantages__blocks">
-        <div class="advantages__block advantages__block-1">
-          <h3 class="advantages__block--title advantages__block-title-1">
-            Lightning-Fast Transactions
-          </h3>
-
-          <p class="advantages__block--text">
-            Platform harnesses Solana's high throughput, ensuring your
-            transactions are lightning-fast and efficient.
-          </p>
-        </div>
-
-        <div class="advantages__block advantages__block-2">
-          <h3 class="advantages__block--title advantages__block-title-2">
-            Rock-Solid Security
-          </h3>
-
-          <p class="advantages__block--text">
-            Our validators implement top-tier security measures, providing a
-            secure environment for your assets in the Solana ecosystem.
-          </p>
-        </div>
-
-        <div class="advantages__block advantages__block-3">
-          <h3 class="advantages__block--title advantages__block-title-3">
-            Decentralization at its Core
-          </h3>
-
-          <p class="advantages__block--text">
-            Platform actively contributes to Solana's commitment to
-            decentralization, ensuring a balanced and distributed network.
-          </p>
-        </div>
-        <div class="advantages__block advantages__block-4">
-          <h3 class="advantages__block--title advantages__block-title-4">
-            Innovative Staking Strategies
-          </h3>
-
-          <p class="advantages__block--text">
-            Maximize your staking rewards with Platform's innovative strategies,
-            optimizing returns for your Solana holdings.
-          </p>
-        </div>
-
-        <div class="advantages__block advantages__block-4">
-          <h3 class="advantages__block--title advantages__block-title-4">
-            Reliable Performance
-          </h3>
-
-          <p class="advantages__block--text">
-            Count on Platform for consistent, reliable performance, minimizing
-            downtime and optimizing your Solana experience.
-          </p>
-        </div>
-
-        <div class="advantages__block advantages__block-5">
-          <h3 class="advantages__block--title advantages__block-title-2">
-            User-Friendly Interface
-          </h3>
-
-          <p class="advantages__block--text">
-            Experience a seamless interaction with our user-friendly interface,
-            making Solana validation accessible to both novices and experts.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-us">
-      <h1 class="section__title why-us__title">Why us</h1>
-
-      <p class="why-us-topic">
-        Choosing Platform as your Solana validator means:
-      </p>
-
-      <img src="./images/scr4_bg-img.png" alt="bg" class="why-us-bg" />
-
-      <div class="why-us-blocks">
-        <div class="why-us-block">
-          <div class="why-us-block-top">
-            <img src="./images/lock.png" alt="title" />
-            <h3 class="why-us-block-title">Elevated Security Measures:</h3>
+            <img
+              src="./images/logo-blured.png"
+              alt="blured"
+              class="hero__logo"
+            />
           </div>
-          <p class="why-us-block-text">
-            Our validator prioritizes the security of your assets. We implement
-            advanced security protocols, including robust encryption and
-            authentication mechanisms, to safeguard your transactions and
-            holdings. Trust Platform to provide a secure environment where the
-            confidentiality and integrity of your digital assets are paramount.
-          </p>
         </div>
-
-        <div class="why-us-block">
-          <div class="why-us-block-top">
-            <img src="./images/lock-3.png" alt="title" />
-            <h3 class="why-us-block-title">
-              Scalable and Flexible Infrastructure:
-            </h3>
+        <div class="hero__slide">
+          <div class="hero__logos">
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
           </div>
-          <p class="why-us-block-text">
-            Platform's infrastructure is designed to be scalable and adaptable
-            to the evolving needs of the Solana network. Whether you are a
-            small-scale participant or a large-scale enterprise, our validator
-            offers a scalable solution that can accommodate varying levels of
-            staking and validation requirements. Experience the flexibility to
-            grow and adapt with Platform.
-          </p>
+          <div class="hero__logos">
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="hero__item" />
+          </div>
         </div>
+      </section>
 
-        <div class="why-us-block">
-          <p class="why-us-block-text">
-            Choosing Platform as your Solana validator is a decision that goes beyond mere validation. It is an investment in reliability, support, community, innovation, security, and scalability. Elevate your Solana experience by aligning yourself with a validator that not only meets but exceeds your expectations, making Platform the preferred choice for Solana enthusiasts seeking a comprehensive and rewarding validation experience.
-          </p>
+      <section class="about animate-up" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <h1 class="section__title">About</h1>
+            <h2 class="about__subtitle">Technical Excellence Unleashed</h2>
+
+            <p class="about__text">
+              By choosing Platform, you not only elevate your Solana experience
+              but also engage with a validator that represents the pinnacle of
+              technical excellence in the blockchain space. With a track record
+              of reliability, unparalleled technical expertise, and a
+              user-centric approach, we empower you to make the most of your
+              Solana staking journey.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+        <img src="./images/video.png" alt="video" class="about__video" />
+        <div class="about__desctop">
+          <div class="about__desctop--left">
+            <h1 class="section__title">About</h1>
+            <h2 class="about__subtitle">Technical Excellence Unleashed</h2>
+            <p class="about__text">
+              By choosing Platform, you not only elevate your Solana experience
+              but also engage with a validator that represents the pinnacle of
+              technical excellence in the blockchain space. With a track record
+              of reliability, unparalleled technical expertise, and a
+              user-centric approach, we empower you to make the most of your
+              Solana staking journey.
+            </p>
+          </div>
+          <img
+            src="./images/video.png"
+            alt="video"
+            class="about__video--desc"
+          />
+        </div>
+      </section>
 
-    <section class="stake">
-      <h1 class="section__title stake__title">Stake with us</h1>
-      <p class="stake__text">
-        Let's forge a brighter future hand in hand.
-      </p>
-      <img src="./images/tape.png" alt="" class="stake__tape">
-    </section>
+      <section class="advantages animate-up" id="advantages">
+        <div class="container">
+          <div class="advantages__inner">
+            <h1 class="section__title advantages__title">
+              Advantages that Set Platform Apart
+            </h1>
+
+            <div class="advantages__blocks">
+              <div class="advantages__block advantages__block-1">
+                <h3 class="advantages__block--title advantages__block-title-1">
+                  Lightning-Fast Transactions
+                </h3>
+
+                <p class="advantages__block--text">
+                  Platform harnesses Solana's high throughput, ensuring your
+                  transactions are lightning-fast and efficient.
+                </p>
+              </div>
+
+              <div class="advantages__block advantages__block-2">
+                <h3 class="advantages__block--title advantages__block-title-2">
+                  Rock-Solid Security
+                </h3>
+
+                <p class="advantages__block--text">
+                  Our validators implement top-tier security measures, providing
+                  a secure environment for your assets in the Solana ecosystem.
+                </p>
+              </div>
+
+              <div class="advantages__block advantages__block-3">
+                <h3 class="advantages__block--title advantages__block-title-3">
+                  Decentralization at its Core
+                </h3>
+
+                <p class="advantages__block--text">
+                  Platform actively contributes to Solana's commitment to
+                  decentralization, ensuring a balanced and distributed network.
+                </p>
+              </div>
+              <div class="advantages__block advantages__block-4">
+                <h3 class="advantages__block--title advantages__block-title-4">
+                  Innovative Staking Strategies
+                </h3>
+
+                <p class="advantages__block--text">
+                  Maximize your staking rewards with Platform's innovative
+                  strategies, optimizing returns for your Solana holdings.
+                </p>
+              </div>
+
+              <div class="advantages__block advantages__block-5">
+                <h3 class="advantages__block--title advantages__block-title-4">
+                  Reliable Performance
+                </h3>
+
+                <p class="advantages__block--text">
+                  Count on Platform for consistent, reliable performance,
+                  minimizing downtime and optimizing your Solana experience.
+                </p>
+              </div>
+
+              <div class="advantages__block advantages__block-6">
+                <h3 class="advantages__block--title advantages__block-title-2">
+                  User-Friendly Interface
+                </h3>
+
+                <p class="advantages__block--text">
+                  Experience a seamless interaction with our user-friendly
+                  interface, making Solana validation accessible to both novices
+                  and experts.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us animate-up" id="why-us">
+        <div class="container">
+          <div class="why-us__inner">
+            <h1 class="section__title why-us__title">Why us</h1>
+
+            <p class="why-us-topic">
+              Choosing Platform as your Solana validator means:
+            </p>
+
+            <img src="./images/scr4_bg-img.png" alt="bg" class="why-us-bg" />
+
+            <div class="why-us-blocks">
+              <div class="why-us-block why-us-block-1">
+                <div class="why-us-block-top">
+                  <img src="./images/lock.png" alt="title" />
+                  <h3 class="why-us-block-title">
+                    Elevated Security Measures:
+                  </h3>
+                </div>
+                <p class="why-us-block-text">
+                  Our validator prioritizes the security of your assets. We
+                  implement advanced security protocols, including robust
+                  encryption and authentication mechanisms, to safeguard your
+                  transactions and holdings. Trust Platform to provide a secure
+                  environment where the confidentiality and integrity of your
+                  digital assets are paramount.
+                </p>
+              </div>
+
+              <div class="why-us-block why-us-block-2">
+                <div class="why-us-block-top">
+                  <img src="./images/lock-3.png" alt="title" />
+                  <h3 class="why-us-block-title">
+                    Scalable and Flexible Infrastructure:
+                  </h3>
+                </div>
+                <p class="why-us-block-text">
+                  Platform's infrastructure is designed to be scalable and
+                  adaptable to the evolving needs of the Solana network. Whether
+                  you are a small-scale participant or a large-scale enterprise,
+                  our validator offers a scalable solution that can accommodate
+                  varying levels of staking and validation requirements.
+                  Experience the flexibility to grow and adapt with Platform.
+                </p>
+              </div>
+
+              <div class="why-us-block why-us-block-3">
+                <p class="why-us-block-text">
+                  Choosing Platform as your Solana validator is a decision that
+                  goes beyond mere validation. It is an investment in
+                  reliability, support, community, innovation, security, and
+                  scalability. Elevate your Solana experience by aligning
+                  yourself with a validator that not only meets but exceeds your
+                  expectations, making Platform the preferred choice for Solana
+                  enthusiasts seeking a comprehensive and rewarding validation
+                  experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stake animate-up">
+        <h1 class="section__title stake__title">Stake with us</h1>
+        <p class="stake__text">Let's forge a brighter future hand in hand.</p>
+        <div class="stake__slide">
+          <div class="stake__logos">
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+          </div>
+          <div class="stake__logos">
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+            <img src="./images/Solana_bg.svg" alt="anim" class="stake__item" />
+          </div>
+        </div>
+        <img src="./images/tape.png" alt="" class="stake__tape" />
+      </section>
+    </main>
 
     <footer class="footer">
       <p class="footer__copyright">
@@ -216,22 +383,46 @@
 
       <div class="footer__social">
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame.png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame.png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame (1).png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame (1).png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame (2).png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame (2).png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame (3).png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame (3).png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame (4).png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame (4).png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
         <a href="#" class="footer__social--link">
-          <img src="./images/social/Frame (5).png" alt="social" class="footer__social--img">
+          <img
+            src="./images/social/Frame (5).png"
+            alt="social"
+            class="footer__social--img"
+          />
         </a>
       </div>
     </footer>

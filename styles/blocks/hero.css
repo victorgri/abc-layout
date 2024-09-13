@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (min-width: 320px) {
   .hero {
     position: relative;
 
@@ -47,5 +47,75 @@
     top: 620px;
     left: -47px;
     height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero__slide {
+    display: flex;
+    overflow: hidden;
+    padding: 33px 0;
+    transform: rotate(10deg);
+  }
+
+  .hero__logos {
+    display: flex;
+    animation: 5s move infinite linear;
+  }
+  .hero__item {
+    height: 90px;
+    width: 80px;
+    margin: 0 30px;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/scr1_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  .hero__inner {
+    margin: 0 auto;
+    width: 980px;
+  }
+
+  .hero__inner .section__title {
+    font-size: 68px;
+    margin-bottom: 50px;
+  }
+
+  .hero__title {
+    background-image: none;
+    padding: 120px 0 30px;
+  }
+
+  .hero__text {
+    font-size: 22px;
+  }
+
+  .hero__button {
+    margin-bottom: 40px;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
   }
 }
