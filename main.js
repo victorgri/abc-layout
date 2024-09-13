@@ -28,3 +28,9 @@ const Button = (label) => {
 const herobutton = Button('GET STARTED');
 herobutton.classList.add('hero__button')
 document.querySelector('.hero').appendChild(herobutton);
+
+const stakeButton = Button("Stake now");
+stakeButton.classList.add('stake__button');
+
+document.querySelector(".stake__text").append(stakeButton);
+

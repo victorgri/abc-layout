@@ -1,0 +1,29 @@
+@media (max-width: 1023px) {
+  .stake__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .stake__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  .stake__button {
+    margin: 30px auto 0;
+  }
+
+  .stake__tape {
+    position: absolute;
+    transform: rotateX(180deg);
+    top: 4300px;
+    left: -45px;
+  }
+}

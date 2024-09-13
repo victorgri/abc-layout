@@ -1,0 +1,79 @@
+@media (max-width: 1023px) {
+  .why-us {
+    padding: 20px 0 120px;;
+    background-image: url(../../images/scr2-3_bg.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+  }
+
+  .why-us__title {
+    margin-bottom: 10px;
+  }
+
+  .why-us-topic {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #c4c4c4;
+    margin-bottom: 30px;
+  }
+
+  .why-us-bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 275px;
+  }
+
+  .why-us-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .why-us-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    z-index: 5;
+  }
+
+  .why-us-block-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .why-us-block-title {
+    width: 225px;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 120%;
+
+    color: #ffffff;
+  }
+
+  .why-us-block-text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #c4c4c4;
+  }
+}
