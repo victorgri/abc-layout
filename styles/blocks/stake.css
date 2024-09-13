@@ -31,25 +31,6 @@
     top: 4620px;
     left: -80px;
   }
-}
-
-@media (min-width: 1024px) {
-  .stake__tape {
-    display: none;
-  }
-
-  .stake .section__title {
-    font-size: 68px;
-    margin-bottom: 20px;
-  }
-
-  .stake__text {
-    font-size: 22px;
-  }
-
-  .stake__text button {
-    cursor: pointer;
-  }
 
   .stake__slide {
     display: flex;
@@ -70,6 +51,26 @@
     width: 80px;
     margin: 0 30px;
     display: inline-block;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .stake__tape {
+    display: none;
+  }
+
+  .stake .section__title {
+    font-size: 68px;
+    margin-bottom: 20px;
+  }
+
+  .stake__text {
+    font-size: 22px;
+  }
+
+  .stake__text button {
+    cursor: pointer;
   }
 }
 

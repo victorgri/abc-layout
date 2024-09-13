@@ -48,11 +48,9 @@
     left: -47px;
     height: 400px;
   }
-}
 
-@media (min-width: 1024px) {
-  .hero {
-    position: relative;
+  .hero__slide {
+    display: none;
   }
 
   .hero__slide {
@@ -70,6 +68,12 @@
     height: 90px;
     width: 80px;
     margin: 0 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    position: relative;
   }
 
   .hero::before {

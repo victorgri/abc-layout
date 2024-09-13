@@ -1,6 +1,6 @@
 @media (min-width: 320px) {
   .footer {
-    margin-top: 270px;
+    margin-top: 165px;
     display: flex;
     flex-direction: column;
     gap: 20px;
